@@ -1,0 +1,17 @@
+<% for (var i = 0; i < songs.length; i++){%>
+<tr>
+	<td><%= songs[i].name %></td>
+	<td> <%= songs[i].artist %> </td>
+	<td> <%= songs[i].album %>  </td>
+	<td> <%= songs[i].year %>  </td>
+	<td> <%= i + 1 %> </td>
+	<td>
+		<a href="/update-song?id=<%=songs[i]._id%>" class="btn border-shadow update">
+			<span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+		</a>
+		<a href="#" class="btn border-shadow delete" data-id=<%=songs[i]._id%> >
+			<span class="text-gradient"><i class="fas fa-times"></i></span>
+		</a>
+	</td>
+</tr>
+<% } %>
