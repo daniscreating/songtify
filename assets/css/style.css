@@ -60,6 +60,10 @@ a{
     color: var(--light);
 }
 
+.text-white{
+    color: #fff;
+}
+
 .text-gradient{
     background: linear-gradient(to right, #2de29a, #9de000);
     -webkit-background-clip: text;
